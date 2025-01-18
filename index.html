@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Form</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body>
+    <div class="form-container">
+      <h1>SIGN UP FORM</h1>
+      <form id="emailForm">
+        <!-- Email Field -->
+        <div>
+          <label for="email" class="form-label">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+          <div class="form-text">We’ll never share your email with anyone.</div>
+        </div>
+
+        <!-- Password Field -->
+        <div>
+          <label for="password" class="form-label">Password:</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+
+      <a href="#">Forgot Password?</a>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
